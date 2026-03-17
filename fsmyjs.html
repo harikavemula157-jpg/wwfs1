@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>DOM</title>
+</head>
+  <h1 id="head1">header1</h1>
+  <h2 id="head2">header2</h2>
+  <p class="para1">this is javascript</p>
+    <p id="removeMe">remove this</p>
+  
+  <button onclick="fun()">click Me</button>
+  <script>
+    document.getElementById("head1").innerHTML = "hello";
+    document.getElementsByClassName("para1")[0].style.color = "blue";
+    document.getElementsByTagName("p")[1].innerText = " hello world";
+
+
+    let r = document.createElement("h3");
+    h3.innerHTML = "heading 3";
+    document.body.appendChild(r);
+
+
+    let l= document.getElementById("l");
+    document.getElementById("h1").removeChild(l);
+
+  
+    document.getElementById("head2").setAttribute("style", "color: blue");
+    console.log(document.getElementById("head2").getAttribute("id"));
+
+    function fun() {
+      alert("done");
+    }
+
+  </script>
+</body>
+</html>
